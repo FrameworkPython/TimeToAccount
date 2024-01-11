@@ -66,8 +66,8 @@ class TelegramTimeUpdater:
                     await self.update_profile(client, choice, current_time)
 
 async def main():
-    api_id="29347006"
-    api_hash="e715c03dce62d7eae715dd4ee7f29c20"
+    api_id="your api id"
+    api_hash="your api hash"
     updater = TelegramTimeUpdater(api_id, api_hash)
     choice = await ainput("میخوای تایم روی اسم باشه یا بیوگرافی یا هردو؟ (اسم/بیوگرافی/هردو): ")
     await updater.update_time(choice)
